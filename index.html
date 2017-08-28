@@ -49,16 +49,30 @@
                 font-size: 20px;
                 font-weight: normal;
                 vertical-align: top;
-                color: rgb(67, 66, 66);}
+                color: rgb(67, 66, 66);
+                padding-left: 10%;
+                padding-right: 10%;
+                }
             h4 {
                 font-size: 15px;
                 font-weight: normal;
-                vertical-align: top;}
+                vertical-align: top;
+                line-height: 150%;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
             h5 {
               font-size: 15px;
                 font-weight: normal;
                 vertical-align: top;
                 text-align: right;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            h6 {
+                font-size: 15px;
+                font-weight: normal;
+                text-align: center;
             }
             td {
                 vertical-align: top;
@@ -82,9 +96,10 @@
                 display: block;
                 color: rgb(67, 66, 66);
                 text-align: left;
-                padding: 10px 16px;
+                padding: 10px 15px;
                 font-size: 16px;
-                text-decoration: none;}
+                text-decoration: none;
+            }
             .topnav a:hover {
                 background-color: white;
                 color: rgb(67, 66, 66);
@@ -94,7 +109,7 @@
                 font-size: 100px;}
             #pic {
                 background-image: url("gg.jpg");
-                background-color: rgb(#22264B);
+                background-color: rgb(#223366);
                 opacity: 0.7;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -135,7 +150,7 @@
                 z-index: 10;
                 color: rgb(67, 66, 66);
                 width: 100%;
-                height: auto;} 
+                height: auto;}
             .flex-container {
                 display: flex;
                 justify-content: space-around;
@@ -149,7 +164,7 @@
             .screen2 {
                 position: relative;
                 bottom: -10px;
-                background-color:#B56969;
+                background-color:#223366;
                 z-index: 10;
                 color: white;
                 text-align: left;
@@ -182,9 +197,9 @@
             .screen4 {
                 position: relative;
                 bottom: -10px;
-                background-color: #E8EDF3;
+                background-color: #CC4455;
                 z-index: 12;
-                color: rgb(67, 66, 66);
+                color: white;
                 width: auto;
                 height: auto;
                 text-align: left;}
@@ -194,13 +209,13 @@
                 background-color: white;
                 z-index: 11;
                 color: rgb(67, 66, 66);
-                text-align: center;
+                text-align: left;
                 width: auto;
                 height: auto;}
             .screen6 {
                 position: relative;
                 bottom: -10px;
-                background-color: #494E6B;
+                background-color: #445588;
                 z-index: 1;
                 color: white;
                 width: auto;
@@ -236,19 +251,19 @@
       }
 
       .item.card25 {
-        width: 24%;
+        width: 25%;
         height: auto;
       }
 
       .item.card50 {
-        width: 48%;
+        width: 50%;
         height: auto;
       }
 
 
       #container{
         position: relative;
-       
+       padding: 10%;
       }
 
       .clearfix {
@@ -359,14 +374,14 @@
             <div class="break"></div>
          </div>
         <div class="screen1" id="profile">
-            <div class="littleBreak"></div>
+            <div class="break"></div>
             <h2>Profile</h2>
             <div class="flex-container">
-                <div class="flex-item">I am interested in technology that will make our world more sustainable.</div>
+                <div class="flex-item"><h4>I am interested in technology that will make our world more sustainable.</h4></div>
                 <br>
                 <img id="image" class="flex-item"src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
                 <br>
-                <div class="flex-item">
+                <div class="flex-item"><h4>
                     <b>Name:</b>
                     <br>
                     Kristina Stodder
@@ -379,7 +394,7 @@
                     <br>
                     <b>Location:</b>
                     <br>
-                    San Francisco, CA
+                    San Francisco, CA</h4>
                 </div>
                
             </div>
@@ -399,7 +414,7 @@
                         <h4>2012-2016</h4>
                         </td>
                         <td><h3><w>Major: Environmental Studies, Minor: History</w></h3>
-                        <h4>Notable Achievements: 2016 Environmental Studies Department's Best Senior Thesis Award (view my senior thesis <a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >here</a>), 2015/2016 Dean's List, Distinction and Honors in the Environmental Studies Major, Outstanding Academic Achievement Award</h4>
+                        <h4>2016 Environmental Studies Department's Best Senior Thesis Award (view my senior thesis <a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >here</a>), 2015/2016 Dean's List, Distinction and Honors in the Environmental Studies Major, Outstanding Academic Achievement Award</h4>
                         <div class="littleBreak"></div>
                     </td>
                     </tr>
@@ -519,15 +534,15 @@
             <div class="littleBreak"> </div>
             <h2>Skills</h2> 
 <table class="skills" align="center">
+    <col style="width: 100%">
                 <thead>
                         <tr>
-
-                          <td><h3>Programing Languages</h3>
-                        <h4>Basic knowldedge of HTML, CSS, and JavaScript, built and launched personal website (<a href="https://www.kristinastodder.com">kristinastodder.com</a>) containing jQuery, bootstrap, and masonry elements, currently learning Python basics</h4>
+                          <td><h3><w>Programing Languages</w></h3>
+                        <h4>Basic knowldedge of HTML, CSS, and JavaScript, built and launched personal website (<a href="https://www.kristinastodder.com" style="color: white; text-decoration: underline" >kristinastodder.com</a>) containing jQuery, bootstrap, and masonry elements, currently learning Python basics</h4>
                         <div class="littleBreak"></div>
                       </td>
                     </tr>
-                        <tr><td><h3>Other</h3>
+                        <tr><td><h3><w>Other</w></h3>
                         <h4>Typing (80WPM), Microsoft Office Suite, Google Suite, Windows, Mac OSX, Skype and Social Media Platforms</h4>
                         <div class="littleBreak"></div>
                       </td>
@@ -558,29 +573,25 @@
 <div class="item card25">
 <div class="card bg-light mb-3">
 <div class="card-body">
-    <h4 class="card-title">In my free time I like to surf, hike, and travel.</h4>
+    <h6 class="card-title">In my free time I like to surf, hike, and travel.</h6>
   </div>
 </div>
 </div>
 
 <div class="item card50">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/mtCook.jpg?raw=true">
-</div>
 </div>
 
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/surf1.jpg?raw=true">
-</div>
 </div> 
 
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/temple.jpg?raw=true">
   <div class="card-body">
     <h5 class="card-title">Chang Mai, Thailand</h5>
@@ -592,7 +603,7 @@
 <div class="item card25">
 <div class="card bg-light mb-3">
 <div class="card-body">
-    <h4 class="card-title">After graduating from UCSB I spent 4 months traveling throughout New Zealand, Thailand, Vietnam, and Indonesia.</h4>
+    <h6 class="card-title">After graduating from UCSB I spent 4 months traveling throughout New Zealand, Thailand, Vietnam, and Indonesia.</h6>
   </div>
 </div>
 </div>
@@ -602,7 +613,7 @@
  
 
 <div class="item card25">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/cityLife2.jpg?raw=true">
   <div class="card-body">
     <h5 class="card-title">Hanoi, Vietnam</h5>
@@ -614,10 +625,10 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/pies.jpg?raw=true">
   <div class="card-body">
-    <h4 class="card-title">WWOOF is a worldwide organization that links volunteers with organic farmers and growers to promote cultural and educational experiences. Read more about WWOOF at <a target="_blank" href="https://www.wwoof.net">wwoof.net</a></h4>
+    <h6 class="card-title">WWOOF is a worldwide organization that links volunteers with organic farmers and growers to promote cultural and educational experiences. Read more about WWOOF at <a target="_blank" href="https://www.wwoof.net">wwoof.net</a></h6>
   </div>
 </div>
 </div>
@@ -625,9 +636,7 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/travel.jpg?raw=true">
-</div>
 </div>
 
 
@@ -636,17 +645,17 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
     <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/vineyard.jpg?raw=true">
 <div class="card-body">
-    <h4 class="card-title">I WWOOFed at a vineyard in New Zealand for 3 weeks.</h4>
+    <h6 class="card-title">I WWOOFed at a vineyard in New Zealand for 3 weeks.</h6>
   </div>
 
 </div>
 </div>
 
    <div class="item card50">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/surf2.jpg?raw=true">
   <div class="card-body">
     <h5 class="card-title">Uluwatu, Bali Indonesia</h5>
@@ -656,38 +665,33 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/nz.jpg?raw=true">
-</div>
 </div>
    
 
   
  
 <div class="item card50">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/doiinthanon.jpg?raw=true">
   <div class="card-body">
-    <h4 class="card-title">Doi Inthanon National Park, Thaliland</h4>
+    <h5 class="card-title">Doi Inthanon National Park, Thaliland</h5>
   </div>
 </div>
 </div>
 
  
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/queenstown.jpg?raw=true">
 </div>
-</div>
+
 
 
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/no.jpg?raw=true">
 </div>
-</div> 
 
 
  
@@ -695,10 +699,10 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
+<div class="card bg-light mb-3 bg-transparent border">
   <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/waterfall.jpg?raw=true">
   <div class="card-body">
-    <h4 class="card-title">North Island, New Zealand</h4>
+    <h5 class="card-title">North Island, New Zealand</h5>
   </div>
 </div>
 </div>
@@ -707,31 +711,26 @@
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/sumbawa2.jpg?raw=true">
 </div>
-</div>
+
 
 
  
 
   <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/rainHike.jpg?raw=true">
 </div>
-</div> 
+
 
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/van.jpg?raw=true">
 </div>
-</div>
+
 
 <div class="item card25">
-<div class="card bg-light mb-3">
   <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/caves.jpg?raw=true">
-</div>
 </div>
 
 
@@ -803,13 +802,23 @@
     
 <script>
     //init Masonry
+
   var $container = $('#container').masonry({
 
-});       
-// Layout Masonry after each image loads     
+});   
+
+$('.container').masonry({
+    itemSelector: 
+    '.item',
+    gutter: 0
+});
+
+// Layout Masonry after each image loads  
+
   $container.imagesLoaded().progress( function() {
   $container.masonry('layout');
 });
+
 </script>
 
 
