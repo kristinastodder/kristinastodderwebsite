@@ -70,11 +70,7 @@
             vertical-align: top;
             padding: 10px;
         }
-        footer {
-            font-size: 10px;
-            padding: 15px
-            background-color: white;
-        }
+
         w {
             color: white;
         }
@@ -83,7 +79,7 @@
             overflow: hidden;
             display: block;
             position: fixed;
-           top: 0;
+            top: 0;
             width: 100%;
             z-index: 4000;
         }
@@ -105,7 +101,7 @@
             display: none;
             font-size: 100px;}
         #pic {
-            background-image: url("ocean.jpg");
+            background-image: url("https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/ocean.jpg");
             background-color: rgb(#223366);
             opacity: 0.7;
             background-size: cover;
@@ -212,28 +208,31 @@
             margin-right: 5%;
             font-size:30px;
             text-align: left;
-       }
+        }
         .educationAlt {
             margin-left: 5%;
             margin-right: 5%;
             font-size:30px;
             text-align: left;
-       }
-   
-        
+        }
+       .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: ;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-size: 10px;
+            padding: 15px;
+        }
+            
         
         
         .item {
             height: auto;
             float: left;
-        }
-        .item.card25 {
-            width: 25%;
-            height: auto;
-        }
-        .item.card50 {
-            width: 50%;
-            height: auto;
         }
         #container{
             position: relative;
@@ -301,16 +300,6 @@
             .education {
                 display: none;
             }
-           .item.card25 {
-                width: auto;
-                height: auto;
-                margin-right: 10%;
-            }
-            .item.card50 {
-                width: auto;
-                height: auto;
-                margin-right: 9%;
-            }
             .flex-container {
                 display: flex;
                 justify-content: space-between;
@@ -334,12 +323,11 @@
         </script>
         <header>
             <div class="topnav" id="myTopnav">
-                <a href="#topnav"></a>
+                <a href="#pic"></a>
                 <a href="#profile">Profile</a>
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
                 <a href="#research">Research</a>
-                <a href="#contact">Contact</a>
              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </header>
@@ -349,9 +337,9 @@
                 <div class="break"></div>
         </div>
         <div class="screen1" id="profile">
-            <div class="break"></div>
+            <div class="littleBreak"></div>
             <div class="flex-container">
-                <div class="flex-item"><h4>Marine science professional interested in California coastal processes</h4></div>
+                <div class="flex-item"><h4>Interested in California coastal processes and mitigating human impact on marine ecosystems</h4></div>
                 <br>
                 <img id="image" class="flex-item"src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
                 <br>
@@ -379,6 +367,16 @@
             </div>    
             <div class="flex-container"><h4>
                 Prepares construction proposals for various public and private clients in the Bay Area • Communicates with architects, clients, and subcontractors to resolve inconsistencies between drawings and specifications • Developed Python program to automate personalized email correspondence with 300+ subcontractors • Tracks deadlines, client billings, and manages pre-construction file database for estimating team</h4>
+            </div>
+            <div class="littleBreak"> </div>
+            <div class="flex-container">
+                <div class="flex-item"><h3><w>Presidio Trust - Restoration Volunteer</w></h3></div>
+                <br>
+                <h3><w>June 2018-Present</w></h3>
+                <br>
+            </div>    
+            <div class="flex-container"><h4>
+                Identifies native and invasive species in the Presidio of San Francisco • Restores and preserves various wetland sites through planting, pruning, and removal of invasive species • Transplants seedlings in the Presidio Nursery</h4>
             </div>
             <div class="littleBreak"> </div>
             <div class="flex-container">
@@ -443,12 +441,23 @@
         <div class="screen3" id="education">
             <div class="littleBreak"> </div>
             <h2>Education</h2> 
-            <div class="flex-container"><h3>University of California, Santa Barbara</h3></div>
-                <br>
-            <div class="flex-container"><h4>September 2012-June 2016</h4></div>
-                <br>    
-            <div class="flex-container"><h4>Major: Environmental Studies, Minor: History</h4>
-            </div>
+                <div class="flex-container">
+                    <div class="flex-item"
+                        <h3><b>City College of San Francisco</b></h3>
+                        <br>
+                        Courses Taken: Oceanography, Physics
+                        <br>
+                        2019
+                        </h3>
+                    </div>
+                    <div class="flex-item"
+                        <h3><b>University of California, Santa Barbara</b>
+                        <br>
+                        Environmental Studies (BA)
+                        <br>
+                        2012-2016</h3>
+                    </div>
+                </div>   
             <div class="littleBreak"> </div>
 
         <div class="educationAlt" text-align="left" margin-left="10px">
@@ -508,13 +517,19 @@
             <div class="littleBreak"></div>
             <h2>Research</h2> 
             <br>
-            <h4><a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >"Julia Platt - Early Marine Conservationist" (2016)</a></h4>
+            <h4><a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >"Julia Platt - Early Marine Conservationist" (2016)</a>
+                <br>
+                <br>
+                INSERT GIS PROJECT HERE/link to ArcGIS online
+            </h4>
             <div class="littleBreak"></div>
 </div>
-        <div class="screen6" id="pic">
-            <div class="littleBreak"></div>           
-            <div class="littleBreak"></div>
-                <footer align="right">Updated May 2019</footer>
+        <div class="screen6"> 
+            <div class="footer">
+                <a target="_blank" href="https://www.linkedin.com/in/kristinastodder/" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/linkedin.png"></a> 
+                <a target="_blank" href="https://github.com/kristinastodder" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/github.PNG"></a> 
+                <a target="_blank" href="https://github.com/kristinastodder" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/email.png"></a> 
+            </div>
         </div> 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
