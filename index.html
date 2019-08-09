@@ -43,7 +43,7 @@
         }
         h3 {
             text-align: center;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: normal;
             vertical-align: top;
             color: #393c45;
@@ -68,11 +68,17 @@
             padding-left: 10%;
             padding-right: 10%;
         }
+        h6 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            color: #393c45;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
         
 
-        w {
-            color: white;
-        }
         .topnav {
             background-color: white;
             overflow: hidden;
@@ -101,7 +107,7 @@
             font-size: 100px;}
 
         #backgroundPic {
-            background-image: url("https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/ocean.jpg?raw=true");
+            background-image: url("ocean.jpg");
             background-color: rgb(#223366);
             opacity: 0.9;
             background-size: cover;
@@ -110,6 +116,27 @@
             z-index: 11;
             background-attachment: fixed;
         }       
+        #backgroundPic2 {
+            background-image: url("water.jpg");
+            background-color: rgb(#223366);
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            z-index: 11;
+            background-attachment: fixed;
+        }  
+        #backgroundPic3 {
+            background-image: url("julia-joppien-G51K-d_klTE-unsplash.jpg");
+            background-color: rgb(#223366);
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            z-index: 11;
+            background-attachment: fixed;
+        } 
+
         .littleBreak {
             padding-bottom: 10%;
         }
@@ -161,13 +188,6 @@
             padding-bottom: 10%;
         }
 
-        .experienceAlt {
-            background-color:#223366;
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size:30px;
-            text-align: left;
-        }
 
         /*CARDS*/
 
@@ -177,7 +197,7 @@
             }
             .is-table-row [class*="col-"] {
                 float: none;
-                display: table-cell;
+                display: inline-flex;
                 vertical-align: top;
             }
         }
@@ -185,9 +205,13 @@
         .is-table-row {
           background: none;
           position: static;
+          margin: 25px;
+          align-self: center;
         }
+
         .is-table-row [class*="col-"] {
-          background: #fff;
+          background: white;
+          margin: 10px;          
         }
 
         .big-sexy-buttons {
@@ -197,10 +221,9 @@
 
         .container2 { padding-top: 20px; padding-bottom: 20px;}
 
-        [class*="col-"] { border: solid 20px #508C9E; border-top-width: 2px; border-bottom-width: 2px; padding-top: 25px; padding-bottom: 25px; background: rgba(255, 255, 255, 0.5); }
-        [class*="col-"]:first-child { border-left-width: 20px; }
-        [class*="col-"]:last-child { border-right-width: 20px; }
-
+        [class*="col-"] { border: solid 2px transparent; padding-top: 25px; padding-bottom: 25px;}
+        [class*="col-"]:first-child {}
+        [class*="col-"]:last-child {}
 
         .col-sm-4:hover{
             background: #48cfad;
@@ -212,13 +235,12 @@
             perspective: 1000px;
         }
 
-
-
         /* flip speed goes here */
         .col-sm-4 {
             transition: 0.5s;
             transform-style: preserve-3d;
             position: relative;
+            padding: 5px;
         }
 
         .flipme {
@@ -231,7 +253,9 @@
         .front {
             padding: 15px;
             backface-visibility: hidden;
+            overflow: hidden;
             position: relative;
+            text-align: center;
         }
 
         /* back, initially hidden pane */
@@ -240,6 +264,7 @@
             padding: 15px;
             color: black;
             backface-visibility: hidden;
+            overflow: hidden;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -248,7 +273,7 @@
 
 
 
-        .buildingPic, .officePic, .wetlandPic, .oceanPic {
+        .pic {
             max-width: 100%;
         }
 
@@ -268,12 +293,7 @@
                     padding-right: 10%;
                     padding-bottom: 10%;
                 }
-        .educationAlt {
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    font-size:30px;
-                    text-align: left;
-                }
+
 
         .screen4 {
             position: relative;
@@ -295,32 +315,13 @@
         
        .footer {
             position: relative;
-            left: 0;
-            bottom: 0;
             width: 100%;
-            height: ;
             background-color: white;
-            color: black;
             text-align: center;
-            font-size: 10px;
-            padding: 15px;
+            padding: 40px;
         }
-            
+
         
-        /*NECESSARY???*/
-        .item2 {
-            height: auto;
-            float: left;
-        }
-        #container{
-            position: relative;
-            padding: 10%;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
      
 /* RESPONSIVE ACTIONS */
         @media only screen 
@@ -406,9 +407,9 @@
             <div class="topnav" id="myTopnav">
                 <a href="#backgroundPic"></a>
                 <a href="#profile">Profile</a>
-                <a href="#experience">Experience</a>
+                <a href="#backgroundPic2">Experience</a>
                 <a href="#education">Education</a>
-                <a href="#research">Research</a>
+                <a href="#backgroundPic3">Research</a>
              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </header>
@@ -420,9 +421,9 @@
         <div class="screen1" id="profile">
             <div class="littleBreak"></div>
             <div class="flex-container">
-                <div class="flex-item"><h4>Interested in California coastal processes and human impact on marine ecosystems</h4></div>
+                <div class="flex-item"><h4>Insterests include Marine Ecology and Biological Oceanography</h4></div>
                 <br>
-                <img id="image" class="flex-item"src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
+                <img id="image" class="flex-item" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
                 <br>
                 <div class="flex-item"><h4>
                     <b>Name:</b>
@@ -438,66 +439,58 @@
             <div class="break"> </div>
         </div>
 
-        <div class="screen2" id="experience">
+        <div class="screen2" id="backgroundPic2">
             <div class="littleBreak"> </div>
             <h2>Experience</h2> 
             <div class="big-sexy-buttons">
                 <div class="container2">
-                    <div class="row is-table-row">
+                    <div class="row is-table-row d-flex justify-content-center">
                         <div class="col-sm-4">
                             <div class="front">
-                                <img class="buildingPic" src="building.jpg">
-                                <h3>Estimating Coordinator</h3>
-                                <h5>Build Group, Inc.</h5>
+                                <img class="pic" src="chuttersnap-UmncJq4KPcA-unsplash.jpg">
+                                <h3>The Boyer Lab</h3>
                             </div>
                             <div class="back">
-                                <h3>Supported preconstruction team to win public and private projects by securing subcontractor work, submitting required paperwork, and maintaining file databases.</h3>
+                            	<h6>Details are here and there are lots of details to detail.</h6>
                             </div> 
                         </div>    
                         <div class="col-sm-4">
                             <div class="front">
-                                <img class="wetlandPic" src="wetland.jpg">
-                                <h3>Restoration Volunteer</h3>
-                                <h5>Presidio Trust</h5>
+                                <img class="pic" src="josh-howard-vWhD848f3v8-unsplash.jpg">
+                                <h3>Presidio Trust</h3>
                             </div>
                             <div class="back">
-                                <h3>Details are here and there are lots of details to detail.</h3>
+                                <h6>Identifies native and invasive species in the Presidio of San Francisco • Restores and preserves various wetland sites through planting, pruning, and removal of invasive species • Transplants seedlings in the Presidio Nursery</h6>
                             </div>
                         </div>    
                         <div class="col-sm-4">
                             <div class="front">
-                                <img class="officePic" src="office.jpg">
-                                <h3>Office Manager/Project Assistant</h3>
-                                <h5>Build Group, Inc.</h5>  
+                                <img class="pic" src="austin-distel-wawEfYdpkag-unsplash.jpg">
+                                <h3>Build Group, Inc.</h3> 
                             </div>
                             <div class="back">
-                                <h3>Details are here and there are lots of details to detail.</h3>
+                            	<h3>Estimating Coordinator</h3>
+                                <h6>Prepared construction proposals for various public and private clients in the Bay Area as part of the Special Projects and Interiors Estimating Team</h6>
                             </div>    
                         </div>
-                    </div>
-                <div class="container2">
-                    <div class="row is-table-row">
                         <div class="col-sm-4">
                             <div class="front">
-                                <img class="oceanPic" src="ocean.jpg">
-                                <h3>Intern</h3>
-                                <h5>Santa Barbara Channelkeeper</h5>
+                                <img class="pic" src="anastasia-taioglou-CTivHyiTbFw-unsplash.jpg">
+                                <h3>Santa Barbara Channelkeeper</h3>
                             </div>
-                            	<div class="back">
-                                	<h3>Details are here and there are lots of details to detail.</h3>
-                            	</div>            
+                            <div class="back">
+                                <h6>Collected data onboard vessel in the Santa Barbara Channel, utilized onboard GPS and Google Earth measurement tool to determine GPS coordinates of offshore fishing activity • Conducted weekly surveys from beach in Santa Barbara County and submitted ocean use data in CA Coastal Commission database • Conducted pollution research on coastal environment after 2015 oil spill • Implemented the Marine Protected Area Watch volunteer program in Santa Barbara County</h6>           
                         	</div>
                     	</div>
                 	</div>
             	</div>
         	</div>      
-        
-        <script>
-            $(".col-sm-4").click(function(){
-            $(this).toggleClass("flipme");
-            });
-        </script> 
-
+	        <script>
+	            $(".col-sm-4").click(function(){
+	            $(this).toggleClass("flipme");
+	            });
+	        </script> 
+    	</div>
         
         <div class="screen3" id="education">
             <div class="littleBreak"> </div>
@@ -505,18 +498,18 @@
             <br><br>
                 <div class="flex-container">
                     <div class="flex-item">
-                        <b>City College of San Francisco</b>
+                        <b>Mira Costa Community College</b>
                         <br>
-                        Courses Taken: Oceanography, Physics
+                        Courses Taken: Geology
                         <br>
                         2019
                     </div>
                     <div class="flex-item">
-                        <b>Coursera - UC Davis</b>
+                        <b>City College of San Francisco</b>
                         <br>
-                        Geographic Information Systems (GIS) Specialization
+                        Courses Taken: Oceanography
                         <br>
-                        Certificate Earned: February 2019
+                        2019
                     </div>
                 </div>   
                 <div class="flex-container">
@@ -531,36 +524,30 @@
             <div class="littleBreak"> </div>
 
         
-        <div class="screen4" id="research">
+        <div class="screen4" id="backgroundPic3">
             <div class="littleBreak"></div>
             <h2>Research</h2> 
             <br>
             <div class="container">  
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+                <!-- Indicators (reactivate if more slides are added
                 <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  Second Indicator (reactivate if more slides are added)
+                  <li data-target="#myCarousel" data-slide-to="1"></li> --> 
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active"><a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf">
-                    <img src="pic.jpg" alt="Pic" style="width:100%;">
+                    <img src="francesco-ungaro-VIUOtQ1AYzs-unsplash.jpg" alt="Pic" style="width:100%;">
                     <div class="carousel-caption">
                         "Julia Platt - Early Marine Conservationist"     
                     </div></a>
                   </div>
-
-                  <div class="item"><a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf">
-                    <img src="pic.jpg" alt="Pic" style="width:100%;">
-                    <div class="carousel-caption">
-                        "Julia Platt - Early Marine Conservationist"
-                    </div></a>
-                  </div>
                 </div>
 
-                <!-- Left and right controls -->
+                <!-- Left and right controls (reactivate if more slides are added)
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   <span class="sr-only">Previous</span>
@@ -568,7 +555,7 @@
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   <span class="sr-only">Next</span>
-                </a>
+                </a>-->
               </div>
               <div class="littleBreak"></div>
             </div>
@@ -577,7 +564,9 @@
             <div class="footer">
                 <a href="https://www.linkedin.com/in/kristinastodder/" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/linkedin.png?raw=true"></a> 
                 <a href="https://github.com/kristinastodder" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/github.PNG?raw=true"></a> 
-                <a href="mailto:kristinastodder@gmail.com" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/email.png?raw=true"></a> 
+                <a href="mailto:kristinastodder@gmail.com" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/email.png?raw=true"></a>
+                <br><br>
+                <h5>Kristina Stodder © 2019</h5>
             </div>
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -590,4 +579,4 @@
     </body>
 </html>
 
-      
+ 
