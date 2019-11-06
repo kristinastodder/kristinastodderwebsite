@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!--Bootstrap for Carosel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <title>The Boyer Lab</title>
+
+    <style>
+        body {
+          color: rgb(67, 66, 66);
+          font-family: "Avenir", Sans-serif;
+          margin: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            z-index: 12;
+            color: white;
+            position: relative;
+            font-weight: normal;
+        }   
+        h2 {
+            text-align: left;
+            font-size: 40px;
+            color: #48cfad;
+            font-weight: normal;
+        }
+        h3 {
+            text-align: left;
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        h4 {
+            text-align: center;
+            font-size: 15px;
+            font-style: italic;
+            vertical-align: top;
+            line-height: 150%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            text-align: center;
+            color: #b1b1b3;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        h6 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            vertical-align: top;
+            color: #393c45;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+
+        .topnav {
+            background-color: white;
+            overflow: hidden;
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 4000;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(67, 66, 66);
+            text-align: left;
+            padding: 10px 15px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(67, 66, 66);
+            font-weight: 500;
+        }
+        .topnav .icon {
+            display: none;
+            font-size: 100px;}
+
+        #backgroundPic {
+            background-image: url("ocean.jpg");
+            background-color: rgb(#223366);
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            z-index: 11;
+            background-attachment: fixed;
+        }       
+        
+
+        .littleBreak {
+            padding-bottom: 10%;
+        }
+        .break {
+            padding-bottom: 15%;
+        }
+        .bigBreak {
+            padding-bottom: 30%;
+        }
+        .screen1 {
+            position: relative;
+            bottom: -10px;
+            background-color: white;
+            z-index: 10;
+            color: rgb(67, 66, 66);
+            width: auto;
+            height: auto;
+            padding: 10%;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px;
+        }
+        .flex-item {
+            margin: 10px;
+            min-width: 100px;
+            text-align: center;
+            flex: 0 1 33%;
+        }
+
+
+         .experience {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+        }
+
+
+       
+
+        .pic {
+            max-width: 100%;
+        }
+
+        .screen3 {
+            position: relative;
+            bottom: -10px;
+            background-color: white;
+            z-index: 11;
+            color:  rgb(67, 66, 66);
+            text-align: left;
+            width: auto;
+            height: auto;
+            padding: 10%;
+        }
+
+        .education {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-bottom: 10%;
+                }
+
+
+
+
+        .container {
+        	width: 100%;
+        }
+       
+
+        .carousel {
+        	border-radius: 55px 55px 55px 55px;
+        	overflow: hidden;
+        }
+
+        .carousel-caption {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        
+       .footer {
+            position: relative;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        
+     
+/* RESPONSIVE ACTIONS */
+        @media only screen 
+        and (min-device-width: 20px)
+        and (max-device-width: 600px)
+        and (-webkit-min-device-pixel-ratio:2) {
+            .topnav a {display: none;}
+            .topnav a.icon {
+                float: left;
+                display: block;
+                font-size: 30px;
+            }
+        }
+        @media only screen
+        and (min-device-width: 20px)
+        and (max-device-width: 600px)
+        and (-webkit-min-device-pixel-ratio:2) {
+            .topnav.responsive {position: fixed;}
+            .topnav.responsive a.icon {
+                right: 0;
+                top: 0;
+                position: fixed;
+                font-size: 30px;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+                font-size: 30px;
+            }
+        }
+        @media only screen
+        and (min-device-width: 600px)
+        and (max-device-width: 10000px)
+        and (-webkit-min-device-pixel-ratio:.5) {
+            .experienceAlt 
+                {display: none;
+            }
+            .educationAlt 
+                {display: none;
+            }
+        }
+        @media only screen 
+        and (min-device-width: 20px)
+        and (max-device-width: 600px)
+        and (-webkit-min-device-pixel-ratio:2) {
+            h1 {font-size: 40px;
+            }
+            #pic {
+                background-size: contain;
+                background-color: rgb(#22264B);
+                background-position: 0px 70px;
+            }
+            .experience {
+                display:none;
+            }
+            .education {
+                display: none;
+            }
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .flex-item {
+                flex: 0 1 calc(25% - 1em;
+            }      
+        }
+    </style>
+
+    <body>
+        <div class="navbar navbar-white navbar-fixed top" role="navigation"></div>
+        <script language="javascript">
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";} 
+                    else {
+                        x.className = "topnav";}
+            }
+        </script>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="#backgroundPic"></a>
+                <a href="#profile">Profile</a>
+                <a href="#backgroundPic2">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#backgroundPic3">Research</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+        <div id="backgroundPic">
+            <div class="break"></div> 
+                <h1>The Boyer Lab</h1>
+                <div class="break"></div>
+        </div>
+        
+        <div class="screen3" id="education">
+        	<hr>
+            <h2>10.22.2019</h2> 
+            <br><br>   
+            <div class="container">     
+                <img src="conference.jpg">
+                <h3>Today I attended the 14th Biennial State of the San Francisco Estuary Conference. The conference brought together scientists, environmental managers, and planning professionals to discuss the current state and future of the San Francisco Bay. At the conference, my PI, Katherine Boyer, presented research about Living Shorelines and eelgrass habitats in the bay in the main auditorium. Posters filled another room downstairs and each of the grad students from my lab participated in sharing their research by creating a display.
+                <br><br>
+				A large portion of the conference addressed effects of climate change and sea level rise in the bay area. However, I also got to attend presentations on sediment dynamics, mammal recovery, and regional ocean patterns. It was great to gain exposure to the scientific community and learn about projects in the area.
+				<br><br></h3>
+				<h4><br>Read more about the conference and the San Francisco Estuary Partnership here: <a href=https://www.sfestuary.org/state-of-the-estuary-conference/>www.sfestuary.org/state-of-the-estuary-conference</a></h4>
+            </div>
+            <div class="break"></div>
+        	<hr>
+            <h2>10.15.2019</h2> 
+            <br><br>   
+            <div class="container">     
+                <h3>In 2017 and 2019, the Boyer Lab collected samples of sediment at various locations in the bay. These samples were placed in a drying oven to remove moisture and weighed. My job today was to sieve through the samples so we could determine the different amounts of sand or silt + clay at each location. 
+                <br><br>	
+				But what is the difference between sand, silt, and clay? 
+				<br><br>
+				Sand is defined as sediment between 0.063mm to 2mm in diameter, while silt is defined as 0.002mm to 0.63mm, and clay is even smaller – any sediment smaller than 0.002mm in diameter.
+				<br><br></h3>
+				<h4><img src="sediment triangle.jpg">
+				<br>
+				Larger sediments are not able to store much water or nutrients, while finer sediment has the capacity to store more water and nutrients</h4>
+				<br>
+				<h3>I used a 2mm sieve on each sample to capture everything larger than a grain of sand – this included shells and other organic material. I repeated the process on the all of the remaining sediment, but with a 0.063mm sieve. This sieve caught the sand, but eliminated all clay and silt. I placed the products from the 2mm sieve and the 0.063mm sieve in separate weigh boats and placed these in a drying oven. By comparing the difference in weight between the original samples and the new samples, we will be able to determine the ratio of sand to silt + clay at each location and how it has changed.</h3>	
+            </div>
+            <div class="break"></div>
+            <hr>
+            <h2>10.08.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+                <div class="break"></div>
+			<hr>
+			<h2>10.01.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+                <div class="break"></div>
+			<hr>
+			<h2>09.17.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+                <div class="break"></div>
+			<hr>
+			<h2>09.10.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <hr>
+                <h2>8.20.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+     <div class="break"></div>
+			<hr>
+			<h2>8.13.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+     <div class="break"></div>
+			<hr>
+			<h2>8.6.2019</h2> 
+            <br><br>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Details here.</h3>
+                    </div>
+                </div>
+
+            <div class="littleBreak"> </div>
+          
+        </div>
+
+        
+            <div class="footer">
+                <a href="https://www.linkedin.com/in/kristinastodder/" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/linkedin.png?raw=true"></a> 
+                <a href="https://github.com/kristinastodder" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/github.PNG?raw=true"></a> 
+                <a href="mailto:kristinastodder@gmail.com" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/email.png?raw=true"></a>
+                <br><br>
+                <h5>Kristina Stodder © 2019</h5>
+            </div>
+
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+      
