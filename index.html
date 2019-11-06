@@ -10,14 +10,14 @@
 
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
+        <!--Bootstrap for Carosel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Masonry JS -->
-
-        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </head>
 
     <title>Kristina Stodder</title>
@@ -42,14 +42,16 @@
             font-weight: normal;
         }
         h3 {
-            font-size: 20px;
+            text-align: center;
+            font-size: 18px;
             font-weight: normal;
             vertical-align: top;
-            color: rgb(67, 66, 66);
+            color: #393c45;
             padding-left: 10%;
             padding-right: 10%;
         }
         h4 {
+            text-align: left;
             font-size: 15px;
             font-weight: normal;
             vertical-align: top;
@@ -58,35 +60,43 @@
             padding-right: 10%;
         }
         h5 {
-            font-size: 15px;
+            font-size: 18px;
             font-weight: normal;
             vertical-align: top;
-            text-align: right;
+            text-align: center;
+            color: #b1b1b3;
             padding-left: 10%;
             padding-right: 10%;
         }
         h6 {
-            font-size: 15px;
-            font-weight: normal;
             text-align: center;
-        }
-        td {
+            font-size: 18px;
+            font-weight: normal;
             vertical-align: top;
-            padding: 20px;
+            color: #393c45;
+            padding-left: 10%;
+            padding-right: 10%;
         }
-        footer {
-            font-size: 10px;
-            padding: 15px;
+        .h7 {
+            text-align: left;
+            font-size: 30px;
+            color: #48cfad;
+            font-weight: normal;
         }
-        w {
-            color: white;
+        .h8 {            
+        	text-align: left;
+            font-size: 16px;
+            font-weight: normal;
+            vertical-align: top;
+            color: #393c45;
         }
+
         .topnav {
             background-color: white;
             overflow: hidden;
             display: block;
             position: fixed;
-           top: 0;
+            top: 0;
             width: 100%;
             z-index: 4000;
         }
@@ -107,16 +117,37 @@
         .topnav .icon {
             display: none;
             font-size: 100px;}
-        #pic {
-            background-image: url("gg.jpg");
+
+        #backgroundPic {
+            background-image: url("ocean.jpg");
             background-color: rgb(#223366);
-            opacity: 0.7;
+            opacity: 0.9;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-position: cover;
             z-index: 11;
             background-attachment: fixed;
         }       
+        #backgroundPic2 {
+            background-image: url("water.jpg");
+            background-color: rgb(#223366);
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            z-index: 11;
+            background-attachment: fixed;
+        }  
+        #backgroundPic3 {
+            background-image: url("jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+            opacity: 0.9;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: cover;
+            z-index: 11;
+            background-attachment: fixed;
+        } 
+
         .littleBreak {
             padding-bottom: 10%;
         }
@@ -132,7 +163,7 @@
             background-color: white;
             z-index: 10;
             color: rgb(67, 66, 66);
-            width: 100%;
+            width: auto;
             height: auto;
         }
         .flex-container {
@@ -147,110 +178,179 @@
             text-align: center;
             flex: 0 1 33%;
         }
+
+        #image {width: 70%;
+        } 
+
         .screen2 {
             position: relative;
             bottom: -10px;
-            background-color:#223366;
+            background-color: #508C9E;
             z-index: 11;
             color: white;
-            text-align: left;
+            text-align: center;
             width: auto;
             height: auto;
         }
+
+         .experience {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+        }
+
+
+        /*CARDS*/
+
+        @media only screen and (min-width : 768px) {
+            .is-table-row {
+                display: table;
+            }
+            .is-table-row [class*="col-"] {
+                float: none;
+                display: inline-flex;
+                vertical-align: top;
+            }
+        }
+
+        .is-table-row {
+          background: none;
+          position: static;
+          margin: 25px;
+          align-self: center;
+        }
+
+        .is-table-row [class*="col-"] {
+          background: white;
+          margin: 10px;          
+        }
+
+        .big-sexy-buttons {
+             margin-bottom: 25px;
+             padding: 25px;
+        }
+
+        .container2 { padding-top: 20px; padding-bottom: 20px;}
+
+        [class*="col-"] { border: solid 2px transparent; padding-top: 25px; padding-bottom: 25px; border-radius: 5px;}
+        [class*="col-"]:first-child {}
+        [class*="col-"]:last-child {}
+
+        .col-sm-4:hover {
+            background: #48cfad;
+            cursor: pointer;
+        }   
+
+        .col-sm-4:hover h6 {
+        	color: white;
+        }
+
+        /* entire container, keeps perspective */
+        .col-sm-4 {
+            perspective: 1000px;
+        }
+
+        /* flip speed goes here */
+        .col-sm-4 {
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            position: relative;
+            padding: 5px;
+        }
+
+        .flipme {
+            transform: rotateY(180deg);
+        }
+
+        /* hide back of pane during swap */
+
+        /* front pane, placed above back */
+        .front {
+            padding: 15px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+
+        /* back, initially hidden pane */
+        .back {
+            transform: rotateY(180deg);
+            padding: 15px;
+            color: black;
+            backface-visibility: hidden;
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+	    }
+
+
+
+        .pic {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
         .screen3 {
             position: relative;
             bottom: -10px;
             background-color: white;
             z-index: 11;
-            color: rgb(67, 66, 66);
+            color:  rgb(67, 66, 66);
             text-align: left;
             width: auto;
             height: auto;
         }
+
         .education {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 10%;
-        }
-        .experience {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 10%;
-        }
-        .skills {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 10%;
-        }
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-bottom: 10%;
+                }
+
+
         .screen4 {
             position: relative;
             bottom: -10px;
-            background-color: #CC4455;
+            background-color: #2B5A6F;
             z-index: 12;
             color: white;
             width: auto;
             height: auto;
             text-align: left;
         }
-        .screen5 {
-            position: relative;
-            bottom: -10px;
-            background-color: white;
-            z-index: 11;
-            color: rgb(67, 66, 66);
-            text-align: left;
-            width: auto;
-            height: auto;
+
+        .container {
+        	padding: 50px;
+        	width: 80%;
+        	background-color: white;
+        	border-radius: 20px;
         }
-        .screen6 {
-            position: relative;
-            bottom: -10px;
-            background-color: #445588;
-            z-index: 1;
-            color: white;
-            width: auto;
-            height: auto;
+
+        .carousel {
+        	border-radius: 55px 55px 55px 55px;
+        	overflow: hidden;
+        }
+
+        .carousel-caption {
             text-align: center;
+            font-size: 25px;
+            color: white;
         }
-        #image {width: 70%;
-        }   
-        .educationAlt {
-            background-color:#223366;
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size:30px;
-            text-align: left;
-       }
-        .experienceAlt {
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size:30px;
-            text-align: left;
-       }
-   
+
         
-        
-        
-        .item {
-            height: auto;
-            float: left;
-        }
-        .item.card25 {
-            width: 25%;
-            height: auto;
-        }
-        .item.card50 {
-            width: 50%;
-            height: auto;
-        }
-        #container{
+       .footer {
             position: relative;
-            padding: 10%;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            padding: 40px;
         }
-        .clearfix {
-            overflow: auto;
-        }
-            
+
+        
+     
 /* RESPONSIVE ACTIONS */
         @media only screen 
         and (min-device-width: 20px)
@@ -303,21 +403,11 @@
                 background-color: rgb(#22264B);
                 background-position: 0px 70px;
             }
-            .education {
+            .experience {
                 display:none;
             }
-            .experience {
+            .education {
                 display: none;
-            }
-           .item.card25 {
-                width: auto;
-                height: auto;
-                margin-right: 10%;
-            }
-            .item.card50 {
-                width: auto;
-                height: auto;
-                margin-right: 9%;
             }
             .flex-container {
                 display: flex;
@@ -329,6 +419,7 @@
             }      
         }
     </style>
+
     <body>
         <div class="navbar navbar-white navbar-fixed top" role="navigation"></div>
         <script language="javascript">
@@ -342,38 +433,30 @@
         </script>
         <header>
             <div class="topnav" id="myTopnav">
-                <a href="#topnav"></a>
+                <a href="#backgroundPic"></a>
                 <a href="#profile">Profile</a>
+                <a href="#backgroundPic2">Projects</a>
                 <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#aboutMe">About Me</a>
-                <a href="#contact">Contact</a>
+                <a href="#backgroundPic3">Experience</a>
              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </header>
-        <div id="pic">
+        <div id="backgroundPic">
             <div class="break"></div> 
                 <h1>Kristina Stodder</h1>
                 <div class="break"></div>
         </div>
         <div class="screen1" id="profile">
-            <div class="break"></div>
-            <h2>Profile</h2>
+            <div class="littleBreak"></div>
             <div class="flex-container">
-                <div class="flex-item"><h4>Currently seeking new opportunities.</h4></div>
+                <div class="flex-item"><h4>Aspiring biological oceanographer and environmental professional with an interest in data science.</h4></div>
                 <br>
-                <img id="image" class="flex-item"src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
+                <img id="image" class="flex-item" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/headshotnew.jpg?raw=true">
                 <br>
                 <div class="flex-item"><h4>
                     <b>Name:</b>
                     <br>
                     Kristina Stodder
-                    <br>
-                    <br>
-                    <b>Age:</b>
-                    <br>
-                    23 years old
                     <br>
                     <br>
                     <b>Location:</b>
@@ -383,420 +466,128 @@
             </div>
             <div class="break"> </div>
         </div>
-        <div class="screen2" id="education">
+
+        <div class="screen2" id="backgroundPic2">
+            <div class="littleBreak"> </div>
+            <h2>Projects</h2> 
+            <div class="big-sexy-buttons">
+                <div class="container2">
+                    <div class="row is-table-row d-flex justify-content-center">
+                        <div class="col-sm-4">
+                            <div class="front">
+                                <img class="pic" src="lab.jpg">
+                                <h3>The Boyer Lab Blog<br></h3>
+                            </div>
+                            <div class="back">
+                            	<h6>The Boyer Lab is located at San Francisco State University's Estuary & Ocean Science Center. Research is centered around coastal ecology, with a focus on sea grass beds.<br><br><a href="http://online.sfsu.edu/katboyer/Boyer_Lab/Home.html">Learn more></a></h6>
+                            </div> 
+                        </div>    
+                        <div class="col-sm-4">
+                            <div class="front">
+                                <img class="pic" src="shark attacks.jpg">
+                                <h3>Shark Attacks in California<br></h3>
+                            </div>
+                            <div class="back">
+                                <h6>Text here.<br><br><a href="https://www.presidio.gov/volunteer/habitat">Learn more></a></h6>
+                            </div>
+                        </div>    
+                        <div class="col-sm-4">
+                            <div class="front">
+                                <img class="pic" src="julia platt.jpg">
+                                <h3>Julia Platt - Early Marine Conservationist<br></h3> 
+                            </div>
+                            <div class="back">
+                                <h6>Info Here<br><br><a href="https://www.buildgc.com/">Learn more></a></h6>
+                            </div>    
+                        </div>
+                        
+                	</div>
+            	</div>
+        	</div>      
+	        <script>
+	            $(".col-sm-4").click(function(){
+	            $(this).toggleClass("flipme");
+	            });
+	        </script> 
+    	</div>
+        
+        <div class="screen3" id="education">
             <div class="littleBreak"> </div>
             <h2>Education</h2> 
-            <table class="education" align="center">
-                <col style="width: 35%">
-                <col style="width: 65%">
-                <thead>
-                    <tr>
-                        <td><h3><w>Khan Academy</w></h3>
-                            <h4>June 2016-present</h4>
-                        </td>
-                        <td><h3><w>Interactive Online Courses</w></h3>
-                            <h4>
-                                <ul>
-                                    <li>Completed 25+ hours of instruction from Computer Programming, Computer Science, and Art History courses</li> 
-                                    <li>Completed 14 coding projects</li> 
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3><w>University of California, Santa Barbara</w></h3>
-                            <h4>2012-2016</h4>
-                            </td>
-                            <td><h3><w>Major: Environmental Studies, Minor: History</w></h3>
-                            <h4>
-                                <ul>
-                                    <li>3.62 GPA</li>
-                                    <li>1st Place recipient of the 2016 Environmental Studies Department Senior Thesis Awards (view my thesis <a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >here</a>)</li> 
-                                    <li>2015/2016 Dean's List</li> 
-                                    <li>Distinction and Honors in the Environmental Studies Major</li> 
-                                    <li>Outstanding Academic Achievement Award</li>
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3><w>UC Accent Center Florence, Italy</w></h3>
-                            <h4>2014</h4>
-                        </td>
-                        <td><h3><w>Education Abroad Program</w></h3>
-                            <h4>
-                                <ul>
-                                    <li>Gained fluency in Italian language through interaction with locals</li> 
-                                    <li>Completed 3 levels of Italian language and Italian Cinema course</li> 
-                                    <li>Collaborated with team to produce a short film for Italian Cinema course</li> 
-                                    <li>Utilized critical thinking and communication skills to navigate through 10 different European countries</li>
-                                </ul>    
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                </thead>    
-            </table>
-        
-        <div class="educationAlt" text-align="left" margin-left="10px">
-            <h3><w>Khan Academy</w></h3>
-            <h4>June 2016-present</h4>
-            <h4><w>Interactive Online Courses</w></h4>
-            <h4>
-                <ul>
-                    <li>Completed 25+ hours of instruction from Computer Programming, Computer Science, and Art History courses</li> 
-                    <li>Completed 14 coding projects</li> 
-                </ul>
-            </h4>
-            <div class="littleBreak"></div>
-            <h3><w>University of California, Santa Barbara</w></h3>
-            <h4>2012-2016<h4>
-            <h4>Major: Environmental Studies 
-            <br>
-            Minor: History</h4>
-            <h4>
-                <ul>
-                    <li>1st Place recipient of the 2016 Environmental Studies Department Senior Thesis Awards (view my thesis <a target="_blank" href="kristinastodder.github.io/Thesis--Final PDF.pdf" style = "color: white; text-decoration: underline;" >here</a>)</li> 
-                    <li>2015/2016 Dean's List</li> 
-                    <li>Distinction and Honors in the Environmental Studies Major</li> 
-                    <li>Outstanding Academic Achievement Award</li>
-                </ul>
-            </h4>
-            <div class="break"></div>
-            <h3><w>UC Accent Center Florence, Italy</w></h3>
-            <h4>2014</h4>
-            <h4>Education Abroad Program</h4>  
-            <h4>
-                <ul>
-                    <li>Gained fluency in Italian language through interaction with locals</li> 
-                    <li>Completed 3 levels of Italian language and Italian Cinema course</li> 
-                    <li>Collaborated with team to produce a short film for Italian Cinema course</li> 
-                    <li>Utilized critical thinking and communication skills to navigate through 10 different European countries</li>
-                </ul>
-            </h4>
-            <div class="break"></div>
-        </div>
-        <div class="screen3" id="experience">
+            <br><br>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <b>Mira Costa Community College</b>
+                        <br>
+                        Courses Taken: Geology
+                        <br>
+                        2019
+                    </div>
+                    <div class="flex-item">
+                        <b>City College of San Francisco</b>
+                        <br>
+                        Courses Taken: Oceanography
+                        <br>
+                        2019
+                    </div>
+                </div>   
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <b>University of California, Santa Barbara</b>
+                        <br>
+                        Environmental Studies (BA)
+                        <br>
+                        2012-2016
+                    </div>
+                </div>
             <div class="littleBreak"> </div>
+
+        
+        <div class="screen4" id="backgroundPic3">
+            <div class="littleBreak"></div>
             <h2>Experience</h2> 
-            <table class="experience" align="center">
-                <col style="width: 35%">
-                <col style="width: 65%">
-                <thead>
-                    <td><h3>J.Crew</h3>
-                        <h4>July 2016-September 2017</h4>
-                    </td>
-                    <td><h3>Sales Associate</h3>
-                        <h4>
-                            <ul>
-                                <li>Delivers excellent service for multiple customers simultaneously</li> 
-                                <li>Surpasses sales quota daily</li> 
-                                <li>Supervises sales floor</li> 
-                                <li>Manages e-commerce (100+ orders per day), tracks inventory, and improves upon existing merchandising strategies</li>
-                            </ul> 
-                        </h4>
-                        <div class="littleBreak"></div>
-                    </td>
-                    <tr>
-                        <td><h3>Santa Barbara Channelkeeper</h3>
-                            <h4>August 2015-June 2016</h4>
-                        </td>
-                        <td><h3>MPA Watch Intern</h3>
-                            <h4>
-                                <ul>
-                                    <li>Implemented the MPA Watch volunteer program</li> 
-                                    <li>Trained 40+ volunteers, led informative presentations, and assisted with outreach</li> 
-                                    <li>Conducted weekly surveys at beaches in Santa Barbara County and entered scientific data in statewide database</li>
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Senator Hannah-Beth Jackson's Legislative Office</h3>
-                            <h4>February 2016-March 2016</h4>
-                        </td>
-                        <td><h3>Office Intern</h3>
-                            <h4>
-                                <ul>
-                                    <li>Provided administrative support</li>
-                                    <li>Communicated with representatives and constituents through phone and email regarding proposed and current legislation</li> 
-                                    <li>Researched and outlined California bills and laws for constituent understanding</li>
-                                    <li>Collected constituent input and entered data in government database</li> 
-                                    <li>Prepared excel and word documents for use by the senator and her team</li> 
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>UC Santa Barbara Annual Fund</h3>
-                            <h4>September 2015-January 2016</h4>
-                        </td>
-                        <td><h3>Student Ambassador</h3>
-                            <h4>
-                                <ul>
-                                    <li>Individually raised $6,000+ to support campus programs and resources through contact with various constituencies</li> 
-                                    <li>Cultivated and maintained connection between UC Santa Barbara, alumni, students, and parents</li>
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                    <td><h3>Sprout Up</h3>
-                        <h4>2013-2015</h4>
-                    </td>
-                    <td><h3>Environmental Educator</h3>
-                        <h4>
-                            <ul>
-                                <li>Volunteered in 2nd grade classrooms throughout Santa Barbara County</li> 
-                                <li>Led lesson plans covering sustainability concepts and environmental stewardship</li> 
-                            </ul>
-                        </h4>
-                        <div class="littleBreak"></div>
-                    </td>
-                </thead>
-            </table>
-        
-        <div class="experienceAlt" text-align="left" margin-left="10px">
-            <h3>J.Crew-Sales Associate</h3>
-            <h4>July 2016-September 2017</h4>
-            <h4>
-                <ul>
-                    <li>Delivers excellent service for multiple customers simultaneously</li> 
-                    <li>Surpasses sales quota daily</li> 
-                    <li>Supervises sales floor </li> 
-                    <li>Manages e-commerce, tracks inventory, and improves upon existing merchandising strategies</li>
-                </ul>
-            </h4>
+            <br><br><br>
+            <div class="container">  
+	            <div class="h7">The Boyer Lab</div> 
+	            <br><br>      
+	            <div class="h8">Work experience here</div>
+				<br><br> 
+	            <div class="break"></div>
+				<div class="h7">Build Group, Inc.</div> 
+	            <br><br>      
+	            <div class="h8">Work experience here</div>
+				<br><br>
+				<div class="break"></div>
+				<div class="h7">Build Group, Inc.</div> 
+	            <br><br>      
+	            <div class="h8">Work experience here</div>
+				<br><br>
+				<div class="break"></div>
+				<div class="h7">Santa Barbara Channelkeeper</div> 
+	            <br><br>      
+	            <div class="h8">Work experience here</div>
+				<br><br>
+        	</div>
             <div class="break"></div>
-                <h3>Santa Barbara Channelkeeper-MPA Watch Intern</h3>
-                <h4>August 2015-June 2016</h4>
-                <h4>
-                    <ul>
-                        <li>Implemented the MPA Watch volunteer program</li> 
-                        <li>Trained 40+ volunteers, led informative presentations, and assisted with outreach</li> 
-                        <li>Conducted weekly surveys at beaches in Santa Barbara County and entered scientific data in statewide database</li>
-                    </ul>
-                </h4>
-            <div class="break"></div>
-            <h3>Senator Hannah-Beth Jackson's Legislative Office-Office Intern</h3>
-            <h4>February 2016-March 2016</h4>
-            <h4>
-                <ul>
-                    <li>Provided administrative support</li>
-                    <li>Communicated with representatives and constituents through phone and email regarding proposed and current legislation</li> 
-                    <li>Reasearched and outlined California bills and laws for constituent understanding</li> 
-                    <li>Collected constituent input and entered data in government database</li>
-                    <li>Prepared excel and word documents for use by the senator and her team</li> 
-                </ul>
-            </h4>
-            <div class="littleBreak"></div>
-            <h3>UC Santa Barbara Annual Fund-Student Ambassador</h3> 
-            <h4>September 2015-January 2016</h4>
-            <h4>
-                <ul>
-                    <li>Individually raised $6,000+ to support campus programs and resources through contact with various constituencies</li> 
-                    <li>Cultivated and maintained connection between UC Santa Barbara, alumni, students, and parents</li>
-                </ul>
-            </h4>
-            <div class="break"></div>
-            <h3>Sprout Up-Environmental Educator</h3>
-            <h4>2013-2015</h4>
-            <h4>
-                <ul>
-                    <li>Volunteered in 2nd grade classrooms throughout Santa Barbara County</li> 
-                    <li>Led lesson plans covering sustainability concepts and environmental stewardship</li>
-                </ul> 
-            </h4>
-            <div class="littleBreak"></div>
-        </div>
-        <div class="screen4" id="skills">
-            <div class="littleBreak"> </div>
-            <h2>Skills</h2> 
-            <table class="skills" align="center">
-                <col style="width: 100%">
-                <thead>
-                    <tr>
-                        <td><h3><w>Programing Languages</w></h3>
-                            <h4>
-                                <ul>
-                                    <li>Basic proficiency in HTML, CSS, and JavaScript</li> 
-                                    <li>Currently learning Python</li>
-                                    <li>Designed, built, and published a responsive website containing jQuery, Bootstrap, and Masonry elements (<a href="https://www.kristinastodder.com" style="color: white; text-decoration: underline">kristinastodder.com</a>)</li> 
-                                </ul>
-                            </h4>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3><w>Other</w></h3>
-                            <h4>
-                                <ul>
-                                    <li>Typing (70WPM)</li> 
-                                    <li>Microsoft Office Suite</li> 
-                                    <li>Google Suite</li> 
-                                    <li>Windows</li> 
-                                    <li>Mac OSX</li> 
-                                    <li>Dropbox</li>
-                                    <li>GitHub</li>
-                                    <li>SQL</li>
-                                    <li>Skype</li> 
-                                    <li>Social Media Platforms</li>
-                                    <li>Google Earth</li>
-                                    <li>Photoshop</li>
-                                    <li>Spanish (4 years)</li>
-                                    <li>Italian (1 year)</li>
-                                </ul>
-                            </h4>
-                            <div class="littleBreak"></div>
-                        </td>
-                    </tr>
-                </thread>
-            </table>
-        </div>
-        <div class="screen5" id="aboutMe">
-            <div class="littleBreak"></div>
-            <h2>About Me</h2> 
-            <div id="container" class="clearfix">
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <div class="card-body">
-                            <h6 class="card-title">In my free time I like to surf and travel</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card50">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/mtCook.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/surf1.jpg?raw=true">
-                </div> 
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/temple.jpg?raw=true">
-                        <div class="card-body">
-                            <h5 class="card-title">Chang Mai, Thailand</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <div class="card-body">
-                            <h6 class="card-title">After graduating from UCSB I spent 4 months traveling throughout New Zealand, Thailand, Vietnam, and Indonesia</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/cityLife2.jpg?raw=true">
-                        <div class="card-body">
-                            <h5 class="card-title">Hanoi, Vietnam</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/travel.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/vineyard.jpg?raw=true">
-                        <div class="card-body">
-                            <h6 class="card-title">In New Zealand I WWOOFed at a vineyard for 3 weeks</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/pies.jpg?raw=true">
-                        <div class="card-body">
-                            <h6 class="card-title">WWOOF is a worldwide organization that links volunteers with organic farmers and growers to promote cultural and educational experiences. Read more about WWOOF at <a target="_blank" href="https://www.wwoof.net">wwoof.net</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/nz.jpg?raw=true">
-                </div>
-                <div class="item card50">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/surf2.jpg?raw=true">
-                        <div class="card-body">
-                            <h5 class="card-title">Uluwatu, Bali Indonesia</h5>
-                        </div>
-                    </div>
-                </div> 
-                <div class="item card50">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/doiinthanon.jpg?raw=true">
-                        <div class="card-body">
-                            <h5 class="card-title">Doi Inthanon National Park, Thaliland</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/queenstown.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/no.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <div class="card bg-light mb-3">
-                        <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/waterfall.jpg?raw=true">
-                    </div>
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/sumbawa2.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/rainHike.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/van.jpg?raw=true">
-                </div>
-                <div class="item card25">
-                    <img class="card-img-top" style: src="https://github.com/kristinastodder/kristinastodder.github.io/blob/master/caves.jpg?raw=true">
-                </div>
-                <div class="littleBreak"></div>
+ <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fh52vae8h" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+             
             </div>
-        </div>
-        <div class="screen6" id="contact">
-            <div class="littleBreak"></div>
-            <h2>Contact</h2> 
-            <br>
-            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-            <div class="LI-profile-badge clearfix"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="kristina-stodder-461213104">
-                <a class="LI-simple-link" href='https://www.linkedin.com/in/kristina-stodder-461213104?trk=profile-badge'style="color: white; align: center; text-decoration: none">
-                <i class="fa fa-linkedin fa-2x"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" style-color: white; align: center; text-size: 30px; text-decoration: none"></i>&nbsp linkedin.com/in/kristina-stodder-461213104</a>
-            </div>           
-            <div class="littleBreak"></div>
-                <footer align="right">Updated August 2017</footer>
-            </div> 
+         	<div class="littleBreak"></div>
 
-<!-- JavaScript -->
-<script>
-// Init Masonry
-    var $container = $('#container').masonry({
-});   
+            <div class="footer">
+                <a href="https://www.linkedin.com/in/kristinastodder/" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/linkedin.png?raw=true"></a> 
+                <a href="https://github.com/kristinastodder" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/github.PNG?raw=true"></a> 
+                <a href="mailto:kristinastodder@gmail.com" style = "text-align: center"><img src="https://github.com/kristinastodder/kristinastodder.github.io/blob/Revision-1/email.png?raw=true"></a>
+                <br><br>
+                <h5>Kristina Stodder © 2019</h5>
+            </div>
 
-// Masonry modifications
-    $('.container').masonry({
-        itemSelector: '.item',
-        gutter: 0
-});
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-// Layout Masonry after each image loads  
-  $container.imagesLoaded().progress( function() {
-  $container.masonry('layout');
-});
-</script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     </body>
 </html>
